@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS DOM</title>
+    <link rel="stylesheet" href= "ACES_Styles_Task2.css">
+    <link rel="icon" href="ACES Logo.png" type="image/x-icon" sizes="15x15">
+</head>
+
+<!-- HTML DOM methods are actions you can perform (on HTML Elements).
+
+HTML DOM properties are values (of HTML Elements) that you can set or change.-->
+
+<body>
+    
+    <div class="header-container">
+        <img class="logo" src="ACES Logo.png" alt="ACES Logo">
+    </div>
+    
+    <section><b>Kindly specify color:</b></section>
+    
+    <input type="text" id="textbox" style="font-family: monospace">
+
+    <button type="button" id="mybutton" 
+    onclick = "colorFunction()">
+    <b>Submit</b></button>
+
+    <div id="div-container"></div>
+
+    <footer><b>The task asked for specfic Div size, 
+            but I resized it so it can be easier to see =D</b>
+    </footer>
+
+    
+    
+    <script>
+    
+        function colorFunction(){
+        var x = document.getElementById("textbox").value;
+        document.getElementById("div-container").style.backgroundColor = x;
+        }
+        
+    </script>
+  
+</body>
+</html>
